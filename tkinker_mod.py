@@ -1,1 +1,3 @@
-import tkinker
+import tkinter
+
+root = tkinter.Tk()
