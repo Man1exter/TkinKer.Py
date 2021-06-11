@@ -1,3 +1,5 @@
+# by Man1exter 
+
 import tkinter
 import random
 
