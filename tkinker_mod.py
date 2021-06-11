@@ -1,4 +1,4 @@
-# by Man1exter 
+# by Man1exter ==> https://github.com/Man1exter
 
 import tkinter
 import random
