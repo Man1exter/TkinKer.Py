@@ -9,5 +9,11 @@ root.title("START TKINTER PROJECT")
 root.geometry('800x700')
 root.configure(background='black')
 
+# events
+
+# images 
+
+# elements
+
 # exit from loop
 root.mainloop()
