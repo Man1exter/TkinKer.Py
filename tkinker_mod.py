@@ -17,7 +17,7 @@ def but_left(event):
 def but_right(event):
     print("right click")
 
-# images 
+# download images / graphics
 
 # elements
 b1 = tkinter.Button(root,text = "BUTTON1")
