@@ -10,6 +10,13 @@ root.title("START TKINTER PROJECT")
 root.geometry('800x700')
 root.configure(background='black')
 
+# background image / graphic
+# ----- size of image ----- #
+bg_image = Image.open('elephant.jpg')
+bg_image = bg_image.resize((500,500),Image.ANTIALIAS)
+access_image = ImageTk.PhotoImage(bg_image)
+tkinter.Label(root,image = access_image).pack()
+
 # events
 def but_left(event):
     print("left click")
