@@ -2,6 +2,7 @@
 
 import tkinter
 import random
+from PIL import Image, ImageTk
 
 # settings of main root
 root = tkinter.Tk()
