@@ -1,7 +1,6 @@
 # by Man1exter ==> https://github.com/Man1exter
 
 import tkinter
-import random
 from PIL import Image, ImageTk
 
 # settings of main root
