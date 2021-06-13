@@ -1,7 +1,6 @@
 # by Man1exter ==> https://github.com/Man1exter
 
 import tkinter
-import random
 from PIL import Image, ImageTk
 
 # settings of main root
@@ -10,10 +9,21 @@ root.title("START TKINTER PROJECT")
 root.geometry('800x700')
 root.configure(background='black')
 
+# menu with click-list 
+main_menu = tkinter.Menu()
+root.config(menu = main_menu)
+
+# section on the menu
+file_menu = tkinter.Menu(main_menu)
+main_menu.add_cascade(label='File', menu=file_menu)
+file_menu.add_command(label='New animal')
+file_menu.add_command(label='New car')
+file_menu.add_command(label='New house')
+
 # background image / graphic
 # ----- size of image ----- #
 bg_image = Image.open('elephant.jpg')
-bg_image = bg_image.resize((797,697),Image.ANTIALIAS)
+bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
 access_image = ImageTk.PhotoImage(bg_image)
 tkinter.Label(root,image = access_image).pack()
 
