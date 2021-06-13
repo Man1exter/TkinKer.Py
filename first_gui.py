@@ -14,13 +14,12 @@ root.config(menu = main_menu)
 # section on the menu
 file_menu = tkinter.Menu(main_menu)
 main_menu.add_cascade(label='ROLL', menu = file_menu)
-file_menu.add_command(label='New Animal')
-file_menu.add_command(label='New Car')
-file_menu.add_command(label='New House')
-file_menu.add_command(label='New Game')
+animal_section = file_menu.add_command(label='New Animal')
+car_section = file_menu.add_command(label='New Car')
+house_section = file_menu.add_command(label='New House')
+game_section = file_menu.add_command(label='New Game')
 file_menu.add_separator()
 
-# ----- size of image ----- #
 # bg_image = Image.open('elephant.jpg')
 # bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
 # access_image = ImageTk.PhotoImage(bg_image)
