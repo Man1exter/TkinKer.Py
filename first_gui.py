@@ -18,7 +18,14 @@ file_menu.add_command(label='New Animal')
 file_menu.add_command(label='New Car')
 file_menu.add_command(label='New House')
 file_menu.add_command(label='New Game')
+file_menu.add_command(label='New Weapon')
+file_menu.add_separator()
 
+# ----- size of image ----- #
+# bg_image = Image.open('elephant.jpg')
+# bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
+# access_image = ImageTk.PhotoImage(bg_image)
+# tkinter.Label(root,image = access_image).pack()
 
 # exit from loop of the window PANEL
 root.mainloop()
