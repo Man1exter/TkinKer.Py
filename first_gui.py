@@ -20,6 +20,22 @@ house_section = file_menu.add_command(label='New House')
 game_section = file_menu.add_command(label='New Game')
 file_menu.add_separator()
 
+def animal_show(event):
+    if event == animal_section:
+       pass
+
+def car_show(event):
+    if event == car_section:
+       pass
+
+def house_show(event):
+    if event == house_section:
+       pass
+
+def game_show(event):
+    if event == game_section:
+       pass
+
 # bg_image = Image.open('elephant.jpg')
 # bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
 # access_image = ImageTk.PhotoImage(bg_image)
