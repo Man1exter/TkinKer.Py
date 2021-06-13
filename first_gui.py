@@ -18,7 +18,6 @@ file_menu.add_command(label='New Animal')
 file_menu.add_command(label='New Car')
 file_menu.add_command(label='New House')
 file_menu.add_command(label='New Game')
-file_menu.add_command(label='New Weapon')
 file_menu.add_separator()
 
 # ----- size of image ----- #
