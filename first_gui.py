@@ -1,4 +1,5 @@
 import tkinter
+import random
 from PIL import Image, ImageTk
 
 # settings of main root PANEL
@@ -19,6 +20,9 @@ car_section = file_menu.add_command(label='New Car')
 house_section = file_menu.add_command(label='New House')
 game_section = file_menu.add_command(label='New Game')
 file_menu.add_separator()
+
+# foo = ['a', 'b', 'c', 'd', 'e']
+# print(random.choice(foo))
 
 def animal_show(event):
     if event == animal_section:
