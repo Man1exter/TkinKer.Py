@@ -41,15 +41,27 @@ def animal_show(event):
 
 def car_show(event):
     if event == car_section:
-       pass
+       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+       bg_image = Image.open(random.choice(pack_animal))
+       bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
+       access_image = ImageTk.PhotoImage(bg_image)
+       tkinter.Label(root,image = access_image).pack()
 
 def house_show(event):
     if event == house_section:
-       pass
+       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+       bg_image = Image.open(random.choice(pack_animal))
+       bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
+       access_image = ImageTk.PhotoImage(bg_image)
+       tkinter.Label(root,image = access_image).pack()
 
 def game_show(event):
     if event == game_section:
-       pass
+       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+       bg_image = Image.open(random.choice(pack_animal))
+       bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
+       access_image = ImageTk.PhotoImage(bg_image)
+       tkinter.Label(root,image = access_image).pack()
 
 # exit from loop of the window PANEL
 root.mainloop()
