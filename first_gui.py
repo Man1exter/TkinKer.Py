@@ -22,32 +22,28 @@ root.config(menu = main_menu)
 # tkinter.Label(root,image = access_image).pack()
 # -------------------------------------------------------
 
-def animal_show(event):
-    if event == animal_section:
-       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+def animal_show():
+       pack_animal = ['./ima/elephant.jpg','./ima/fhdf.jpg','./ima/jhggjhj.jpg','./ima/jghjhjhgh.jpg','./ima/hgfhgfhggf.jpg.jpg']
        bg_image = Image.open(random.choice(pack_animal))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
-def car_show(event):
-    if event == car_section:
-       pack_car = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+def car_show():
+       pack_car = ['./ima/elephant.jpg','./ima/fhdf.jpg','./ima/jhggjhj.jpg','./ima/jghjhjhgh.jpg','./ima/hgfhgfhggf.jpg']
        bg_image = Image.open(random.choice(pack_car))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
-def house_show(event):
-    if event == house_section:
+def house_show():
        pack_house = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
        bg_image = Image.open(random.choice(pack_house))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
-def game_show(event):
-    if event == game_section:
+def game_show():
        pack_game = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
        bg_image = Image.open(random.choice(pack_game))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
