@@ -22,39 +22,53 @@ root.config(menu = main_menu)
 # tkinter.Label(root,image = access_image).pack()
 # -------------------------------------------------------
 
-def animal_show(event):
-    if event == animal_section:
-       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+def animal_show():
+       pack_animal = ['../Dkinker_module.py/animals/elephant.jpg','../Dkinker_module.py/animals/mini_monkey.jpg','../Dkinker_module.py/animals/monkey.jpg','../Dkinker_module.py/animals/lion.jpg','../Dkinker_module.py/animals/chogath.jpg']
        bg_image = Image.open(random.choice(pack_animal))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
-def car_show(event):
-    if event == car_section:
-       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
-       bg_image = Image.open(random.choice(pack_animal))
+def car_show():
+       pack_car = ['../Dkinker_module.py/animals/elephant.jpg','../Dkinker_module.py/animals/mini_monkey.jpg','../Dkinker_module.py/animals/monkey.jpg','../Dkinker_module.py/animals/lion.jpg','../Dkinker_module.py/animals/chogath.jpg']
+       bg_image = Image.open(random.choice(pack_car))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
-def house_show(event):
-    if event == house_section:
-       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
-       bg_image = Image.open(random.choice(pack_animal))
+def house_show():
+       pack_house = ['../Dkinker_module.py/animals/elephant.jpg','../Dkinker_module.py/animals/mini_monkey.jpg','../Dkinker_module.py/animals/monkey.jpg','../Dkinker_module.py/animals/lion.jpg','../Dkinker_module.py/animals/chogath.jpg']
+       bg_image = Image.open(random.choice(pack_house))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
-def game_show(event):
-    if event == game_section:
-       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
-       bg_image = Image.open(random.choice(pack_animal))
+def game_show():
+       pack_game = ['../Dkinker_module.py/animals/elephant.jpg','../Dkinker_module.py/animals/mini_monkey.jpg','../Dkinker_module.py/animals/monkey.jpg','../Dkinker_module.py/animals/lion.jpg','../Dkinker_module.py/animals/chogath.jpg']
+       bg_image = Image.open(random.choice(pack_game))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
 # section on the menu
+file_menu = tkinter.Menu(main_menu)
+main_menu.add_cascade(label='ROLL', menu = file_menu)
+animal_section = file_menu.add_command(label='New Animal',command = animal_show())
+car_section = file_menu.add_command(label='New Car',command = car_show())
+house_section = file_menu.add_command(label='New House',command = house_show())
+game_section = file_menu.add_command(label='New Game',command = game_show())
+file_menu.add_separator()
+
+# section with random essay
+file_menu = tkinter.Menu(main_menu)
+main_menu.add_cascade(label='ROLL V2', menu = file_menu)
+animal_section = file_menu.add_command(label='New Animal',command = animal_show())
+car_section = file_menu.add_command(label='New Car',command = car_show())
+house_section = file_menu.add_command(label='New House',command = house_show())
+game_section = file_menu.add_command(label='New Game',command = game_show())
+file_menu.add_separator()
+
+# section with random emoji
 file_menu = tkinter.Menu(main_menu)
 main_menu.add_cascade(label='ROLL', menu = file_menu)
 animal_section = file_menu.add_command(label='New Animal',command = animal_show())
