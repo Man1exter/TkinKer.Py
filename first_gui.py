@@ -21,8 +21,15 @@ house_section = file_menu.add_command(label='New House')
 game_section = file_menu.add_command(label='New Game')
 file_menu.add_separator()
 
+# -------------------------------------------------------
 # foo = ['a', 'b', 'c', 'd', 'e']
 # print(random.choice(foo))
+
+# bg_image = Image.open('elephant.jpg')
+# bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
+# access_image = ImageTk.PhotoImage(bg_image)
+# tkinter.Label(root,image = access_image).pack()
+# -------------------------------------------------------
 
 def animal_show(event):
     if event == animal_section:
@@ -39,11 +46,6 @@ def house_show(event):
 def game_show(event):
     if event == game_section:
        pass
-
-# bg_image = Image.open('elephant.jpg')
-# bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
-# access_image = ImageTk.PhotoImage(bg_image)
-# tkinter.Label(root,image = access_image).pack()
 
 # exit from loop of the window PANEL
 root.mainloop()
