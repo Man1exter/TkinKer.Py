@@ -33,7 +33,11 @@ file_menu.add_separator()
 
 def animal_show(event):
     if event == animal_section:
-       pass
+       pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+       bg_image = Image.open(random.choice(pack_animal))
+       bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
+       access_image = ImageTk.PhotoImage(bg_image)
+       tkinter.Label(root,image = access_image).pack()
 
 def car_show(event):
     if event == car_section:
