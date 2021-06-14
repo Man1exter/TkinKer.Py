@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 
 # settings of main root PANEL
 root = tkinter.Tk()
-root.title("ANIMAL IMAGES ON THE PANEL")
+root.title("GRAPHICS AND IMAGES ON THE PANEL / BACKGROUND")
 root.geometry('800x700')
 root.configure(background='black')
 
