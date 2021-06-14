@@ -23,28 +23,28 @@ root.config(menu = main_menu)
 # -------------------------------------------------------
 
 def animal_show():
-       pack_animal = ['./ima/elephant.jpg','./ima/fhdf.jpg','./ima/jhggjhj.jpg','./ima/jghjhjhgh.jpg','./ima/hgfhgfhggf.jpg.jpg']
+       pack_animal = ['elephant.jpg','mini_monkey.jpg','monkey.jpg','.lion.jpg','chogath.jpg']
        bg_image = Image.open(random.choice(pack_animal))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
 def car_show():
-       pack_car = ['./ima/elephant.jpg','./ima/fhdf.jpg','./ima/jhggjhj.jpg','./ima/jghjhjhgh.jpg','./ima/hgfhgfhggf.jpg']
+       pack_car = ['elephant.jpg','mini_monkey.jpg','monkey.jpg','lion.jpg','chogath.jpg']
        bg_image = Image.open(random.choice(pack_car))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
 def house_show():
-       pack_house = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+       pack_house = ['elephant.jpg','mini_monkey.jpg','monkey.jpg','lion.jpg','chogath.jpg']
        bg_image = Image.open(random.choice(pack_house))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
 
 def game_show():
-       pack_game = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+       pack_game = ['elephant.jpg','mini_monkey.jpg','monkey.jpg','lion.jpg','chogath.jpg']
        bg_image = Image.open(random.choice(pack_game))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
