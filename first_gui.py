@@ -12,15 +12,6 @@ root.configure(background='black')
 main_menu = tkinter.Menu()
 root.config(menu = main_menu)
 
-# section on the menu
-file_menu = tkinter.Menu(main_menu)
-main_menu.add_cascade(label='ROLL', menu = file_menu)
-animal_section = file_menu.add_command(label='New Animal')
-car_section = file_menu.add_command(label='New Car')
-house_section = file_menu.add_command(label='New House')
-game_section = file_menu.add_command(label='New Game')
-file_menu.add_separator()
-
 # -------------------------------------------------------
 # foo = ['a', 'b', 'c', 'd', 'e']
 # print(random.choice(foo))
@@ -62,6 +53,16 @@ def game_show(event):
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
        tkinter.Label(root,image = access_image).pack()
+
+# section on the menu
+file_menu = tkinter.Menu(main_menu)
+main_menu.add_cascade(label='ROLL', menu = file_menu)
+animal_section = file_menu.add_command(label='New Animal',command = animal_show())
+car_section = file_menu.add_command(label='New Car',command = car_show())
+house_section = file_menu.add_command(label='New House',command = house_show())
+game_section = file_menu.add_command(label='New Game',command = game_show())
+file_menu.add_separator()
+
 
 # exit from loop of the window PANEL
 root.mainloop()
