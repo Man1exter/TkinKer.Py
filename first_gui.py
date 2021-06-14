@@ -30,7 +30,7 @@ def animal_show():
        tkinter.Label(root,image = access_image).pack()
 
 def car_show():
-       pack_car = ['../Dkinker_module.py/animals/elephant.jpg','../Dkinker_module.py/animals/mini_monkey.jpg','../Dkinker_module.py/animals/monkey.jpg','l../Dkinker_module.py/animals/ion.jpg','../Dkinker_module.py/animals/chogath.jpg']
+       pack_car = ['../Dkinker_module.py/animals/elephant.jpg','../Dkinker_module.py/animals/mini_monkey.jpg','../Dkinker_module.py/animals/monkey.jpg','../Dkinker_module.py/animals/lion.jpg','../Dkinker_module.py/animals/chogath.jpg']
        bg_image = Image.open(random.choice(pack_car))
        bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
        access_image = ImageTk.PhotoImage(bg_image)
@@ -51,6 +51,24 @@ def game_show():
        tkinter.Label(root,image = access_image).pack()
 
 # section on the menu
+file_menu = tkinter.Menu(main_menu)
+main_menu.add_cascade(label='ROLL', menu = file_menu)
+animal_section = file_menu.add_command(label='New Animal',command = animal_show())
+car_section = file_menu.add_command(label='New Car',command = car_show())
+house_section = file_menu.add_command(label='New House',command = house_show())
+game_section = file_menu.add_command(label='New Game',command = game_show())
+file_menu.add_separator()
+
+# section with random essay
+file_menu = tkinter.Menu(main_menu)
+main_menu.add_cascade(label='ROLL V2', menu = file_menu)
+animal_section = file_menu.add_command(label='New Animal',command = animal_show())
+car_section = file_menu.add_command(label='New Car',command = car_show())
+house_section = file_menu.add_command(label='New House',command = house_show())
+game_section = file_menu.add_command(label='New Game',command = game_show())
+file_menu.add_separator()
+
+# section with random emoji
 file_menu = tkinter.Menu(main_menu)
 main_menu.add_cascade(label='ROLL', menu = file_menu)
 animal_section = file_menu.add_command(label='New Animal',command = animal_show())
