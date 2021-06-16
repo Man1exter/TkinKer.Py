@@ -77,6 +77,5 @@ house_section = file_menu.add_command(label='New House',command = house_show())
 game_section = file_menu.add_command(label='New Game',command = game_show())
 file_menu.add_separator()
 
-
 # exit from loop of the window PANEL
 root.mainloop()
