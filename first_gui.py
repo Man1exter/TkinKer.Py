@@ -61,7 +61,7 @@ file_menu.add_separator()
 
 # section with random essay
 file_menu = tkinter.Menu(main_menu)
-main_menu.add_cascade(label='ROLL V2', menu = file_menu)
+main_menu.add_cascade(label='ESSAY', menu = file_menu)
 animal_section = file_menu.add_command(label='New Animal',command = animal_show())
 car_section = file_menu.add_command(label='New Car',command = car_show())
 house_section = file_menu.add_command(label='New House',command = house_show())
@@ -70,7 +70,7 @@ file_menu.add_separator()
 
 # section with random emoji
 file_menu = tkinter.Menu(main_menu)
-main_menu.add_cascade(label='ROLL', menu = file_menu)
+main_menu.add_cascade(label='EMOJI', menu = file_menu)
 animal_section = file_menu.add_command(label='New Animal',command = animal_show())
 car_section = file_menu.add_command(label='New Car',command = car_show())
 house_section = file_menu.add_command(label='New House',command = house_show())
