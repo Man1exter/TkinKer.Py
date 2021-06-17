@@ -11,7 +11,7 @@ root.geometry('800x700')
 root.configure(background='black')
 
 # random color
-color = ["blue","yellow","green","black","orange","purple","lightblue","olive","indygo","pink"]
+color = ["blue","yellow","green","orange","purple","lightblue","olive","pink"]
 colors = random.choice(color)
 
 # buttons with pack
@@ -33,10 +33,10 @@ b3.grid(row = 1,  column = 2)
 b4.grid(row = 0,  column = 3)
 b5.grid(row = 1,  column = 4)
 b6.grid(row = 0,  column = 5)
-b7.grid(row = 0,  column = 5)
-b8.grid(row = 0,  column = 5)
-b9.grid(row = 0,  column = 5)
-b10.grid(row = 0,  column = 5)
+b7.grid(row = 1,  column = 6)
+b8.grid(row = 0,  column = 7)
+b9.grid(row = 1,  column = 8)
+b10.grid(row = 0,  column = 9)
 
 # functions with event
 

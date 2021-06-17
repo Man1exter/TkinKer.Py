@@ -1,2 +1,2 @@
 
-b1.grid(row = 0,  column = 0)
+b1.grid(row = 1,  column = 0)
