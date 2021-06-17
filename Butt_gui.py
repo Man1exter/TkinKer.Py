@@ -41,6 +41,12 @@ b10.grid(row = 0,  column = 9)
 # functions with event
 
 # images (download)
+def fun_ani():
+   pack_animal = ['/ima/elephant.jpg','/ima/fhdf.jpg','/ima/jhggjhj.jpg','/ima/jghjhjhgh.jpg','/ima/hgfhgfhggf.jpg']
+   bg_image = Image.open(random.choice(pack_animal))
+   bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
+   access_image = ImageTk.PhotoImage(bg_image)
+   tkinter.Label(root,image = access_image).pack()
 
 # exit with [X]
 root.mainloop()
