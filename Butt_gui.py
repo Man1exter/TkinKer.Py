@@ -38,7 +38,7 @@ b8.grid(row = 0,  column = 7)
 b9.grid(row = 1,  column = 8)
 b10.grid(row = 0,  column = 9)
 
-# functions with event
+# functions with event to add images after click
 
 # images (download)
 def fun_ani():
