@@ -1,6 +1,7 @@
 # by Man1exter ==> https://github.com/Man1exter
 
 import tkinter
+from tkinter import font
 from PIL import Image, ImageTk
 import random
 
@@ -15,16 +16,14 @@ color = ["blue","yellow","green","orange","purple","lightblue","olive","pink"]
 colors = random.choice(color)
 
 # buttons with pack
-b1 = tkinter.Button(root,text="ANIMAL",bg=colors,width=10)
-b2 = tkinter.Button(root,text="CAR",bg=colors,width=10)
-b3 = tkinter.Button(root,text="HOUSE",bg=colors,width=10)
-b4 = tkinter.Button(root,text="JOB",bg=colors,width=10)
-b5 = tkinter.Button(root,text="COUNTRY",bg=colors,width=10)
-b6 = tkinter.Button(root,text="CLUB",bg=colors,width=10)
-b7 = tkinter.Button(root,text="NAME",bg=colors,width=10)
-b8 = tkinter.Button(root,text="WEATHER",bg=colors,width=10)
-b9 = tkinter.Button(root,text="GAME",bg=colors,width=10)
-b10 = tkinter.Button(root,text="BEER",bg=colors,width=10)
+b1 = tkinter.Button(root,text="ANIMAL",bg=colors,width=10,font=1)
+b2 = tkinter.Button(root,text="CAR",bg=colors,width=10,font=1)
+b3 = tkinter.Button(root,text="HOUSE",bg=colors,width=10,font=1)
+b4 = tkinter.Button(root,text="JOB",bg=colors,width=10,font=1)
+b5 = tkinter.Button(root,text="COUNTRY",bg=colors,width=10,font=1)
+b6 = tkinter.Button(root,text="CLUB",bg=colors,width=10,font=1)
+b7 = tkinter.Button(root,text="NAME",bg=colors,width=10,font=1)
+b8 = tkinter.Button(root,text="WEATHER",bg=colors,width=10,font=1)
 
 # grid mesh cache
 b1.grid(row = 1,  column = 0)
@@ -35,8 +34,6 @@ b5.grid(row = 1,  column = 4)
 b6.grid(row = 0,  column = 5)
 b7.grid(row = 1,  column = 6)
 b8.grid(row = 0,  column = 7)
-b9.grid(row = 1,  column = 8)
-b10.grid(row = 0,  column = 9)
 
 # functions with event to add images after click
 
