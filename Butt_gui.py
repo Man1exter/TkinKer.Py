@@ -33,7 +33,7 @@ b6 = tkinter.Button(root,text="CLUB",bg = colors,width = 10,font = ('Arial', 12)
 b7 = tkinter.Button(root,text="NAME",bg = colors,width = 10,font = ('Arial', 12))
 b8 = tkinter.Button(root,text="WEATHER",bg = colors,width = 10,font = ('Arial', 12))
 
-# grid mesh cache
+# grid mesh cache (oversize with image)
 b1.grid(row = 1,  column = 0)
 b2.grid(row = 0,  column = 1)
 b3.grid(row = 1,  column = 2)
