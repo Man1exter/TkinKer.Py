@@ -16,14 +16,14 @@ color = ["blue","yellow","green","orange","purple","lightblue","olive","pink"]
 colors = random.choice(color)
 
 # buttons with pack
-b1 = tkinter.Button(root,text="ANIMAL",bg=colors,width=10,font=1)
-b2 = tkinter.Button(root,text="CAR",bg=colors,width=10,font=1)
-b3 = tkinter.Button(root,text="HOUSE",bg=colors,width=10,font=1)
-b4 = tkinter.Button(root,text="JOB",bg=colors,width=10,font=1)
-b5 = tkinter.Button(root,text="COUNTRY",bg=colors,width=10,font=1)
-b6 = tkinter.Button(root,text="CLUB",bg=colors,width=10,font=1)
-b7 = tkinter.Button(root,text="NAME",bg=colors,width=10,font=1)
-b8 = tkinter.Button(root,text="WEATHER",bg=colors,width=10,font=1)
+b1 = tkinter.Button(root,text="ANIMAL",bg=colors,width=10,font=('Arial', 12))
+b2 = tkinter.Button(root,text="CAR",bg=colors,width=10,font=('Arial', 12))
+b3 = tkinter.Button(root,text="HOUSE",bg=colors,width=10,font=('Arial', 12))
+b4 = tkinter.Button(root,text="JOB",bg=colors,width=10,font=('Arial', 12))
+b5 = tkinter.Button(root,text="COUNTRY",bg=colors,width=10,font=('Arial', 12))
+b6 = tkinter.Button(root,text="CLUB",bg=colors,width=10,font=('Arial', 12))
+b7 = tkinter.Button(root,text="NAME",bg=colors,width=10,font=('Arial', 12))
+b8 = tkinter.Button(root,text="WEATHER",bg=colors,width=10,font=('Arial', 12))
 
 # grid mesh cache
 b1.grid(row = 1,  column = 0)
