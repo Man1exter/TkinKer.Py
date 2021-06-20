@@ -11,6 +11,8 @@ root.title("START TKINTER PROJECT")
 root.geometry('800x700')
 root.configure(background='black')
 
+# settings of image after click on button
+
 # random color
 color = ["blue","yellow","green","orange","purple","lightblue","olive","pink"]
 colors = random.choice(color)
