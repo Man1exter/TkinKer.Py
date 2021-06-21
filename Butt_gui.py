@@ -22,6 +22,7 @@ def change_image_animal():
    bg_image = bg_image.resize((800,700),Image.ANTIALIAS)
    access_image = ImageTk.PhotoImage(bg_image)
    tkinter.Label(root,image = access_image).pack()
+# bug / fix / error ===> feature :D
 
 # buttons with pack
 b1 = tkinter.Button(root,text="ANIMAL",bg = colors,width = 10,font = ('Arial', 12),command = change_image_animal)
