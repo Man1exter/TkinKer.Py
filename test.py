@@ -7,8 +7,12 @@ root.geometry('800x700')
 root.configure(background = 'green')
 
 def change_color(i = 0):
-    if i < 100:
+    if i < 50:
         colors = ('red', 'blue', 'green', 'black', "pink", "blue")
+        root.config(bg=colors[i])
+        root.after(500, change_color, i+1)
+    else:
+        colors = ("white")
         root.config(bg=colors[i])
         root.after(500, change_color, i+1)
 
