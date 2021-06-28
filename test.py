@@ -23,6 +23,7 @@ def background_change():
 
 button_test = Button(root, text = 'COLOR',bg = 'green', width = 11, font = ('ARIAL',15), command=background_change).pack()
 button_test = Button(root, text = 'COLOR',bg = 'green', width = 11, font = ('ARIAL',15), command=background_change).pack()
+button_test = Button(root, text = 'COLOR',bg = 'green', width = 11, font = ('ARIAL',15), command=background_change).pack()
 
 change_color()
 root.mainloop()
